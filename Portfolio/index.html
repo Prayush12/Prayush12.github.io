@@ -11,6 +11,19 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <style>
+  
+
+.item h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    font-weight: 400;
+    font-style: italic;
+    margin: 70px 0;
+}
+
+.item span {
+    font-style: normal;
+}
   body {
       font: 400 15px/1.8 Lato, sans-serif;
       color: #777;
@@ -170,17 +183,16 @@
         <li><a href="#myPage">HOME</a></li>
         <li><a href="#band">About me</a></li>
         <li><a href="#tour">Projects</a></li>
-        <li><a href="#contact">CONTACT</a></li>
         <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">MORE
           <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#">About me</a></li>
+            <li><a href="#">Music</a></li>
             <li><a href="#">Projects</a></li>
             <li><a href="#">Extra activities</a></li> 
           </ul>
         </li>
-        <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+       
       </ul>
     </div>
   </div>
@@ -205,7 +217,7 @@
       </div>
 
       <div class="item">
-        <img src="3.jpg" alt="Chicago" width="1200" height="700">
+        <img src="2.jpg" alt="Chicago" width="1200" height="700">
         <div class="carousel-caption">
           <h3>HEY YO!</h3>
           <p>Thank you, for visiting my website.</p>
@@ -236,18 +248,18 @@
 <div id="band" class="container text-center">
   <h3>About me</h3>
   <p><em>I love music!</em></p>
-  <p>Hello dear ! My name is Prayush and i do some programming stuffs umm don't forget to follow me on my github and don't forget to check my projects and check some more in this website :)</p>
+  <p>Hello dear ! My name is Prayush Sthapit and i do some programming stuffs so don't forget to follow me on my github and don't forget to check my projects.</p>
   <br>
   <div class="row">
     <div class="col-sm-4">
       <p class="text-center"><strong>Java</strong></p><br>
       <a href="#demo" data-toggle="collapse">
-        <img src="java.png" class="img-circle person" alt="Random Name" width="255" height="255">
+        <img src="java.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
       </a>
       <div id="demo" class="collapse">
-        <p>Guitarist and Lead Vocalist</p>
-        <p>Loves long walks on the beach</p>
-        <p>Member since 1988</p>
+        <p>Deeloper</p>
+        <p>You knw me right ;)</p>
+        <p>I can do Cool stuff with codes</p>
       </div>
     </div>
     <div class="col-sm-4">
@@ -256,9 +268,9 @@
         <img src="php.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
       </a>
       <div id="demo2" class="collapse">
-        <p>Drummer</p>
-        <p>Loves drummin'</p>
-        <p>Member since 1988</p>
+        <p>Php Programmer</p>
+        <p>Laravel and CI</p>
+        <p>Web applications</p>
       </div>
     </div>
     <div class="col-sm-4">
@@ -267,9 +279,9 @@
         <img src="python.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
       </a>
       <div id="demo3" class="collapse">
-        <p>Bass player</p>
-        <p>Loves math</p>
-        <p>Member since 2005</p>
+        <p>Phython Programmer</p>
+        <p>Loves Coding</p>
+        <p>Web applications</p>
       </div>
     </div>
   </div>
@@ -279,101 +291,69 @@
 <div id="tour" class="bg-1">
   <div class="container">
     <h3 class="text-center">Projects</h3>
-    <p class="text-center">These are the projects i have done</p>
-        
+    <p class="text-center">Project section is under contruction !!!!! Enjoy the photos </p>
+    <div class="container-fluid text-center bg-grey">
+  <h2>Photography</h2>
+  <h4>What we have captured</h4>
+  <div class="row text-center">
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="kalinchowk.jpg" alt="Paris">
+        <p><strong>kalinchowk</strong></p>
+        <p>Enjoy the beauty</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="mustang.jpg" alt="New York">
+        <p><strong>Mustang</strong></p>
+        <p>Yes, Mustang</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="rara.jpg" alt="San Francisco">
+        <p><strong>Rara Lake</strong></p>
+        <p>Yes, rara lake</p>
+      </div>
+    </div>
+</div>    
   
   
-  <!-- Modal -->
-  <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">×</button>
-          <h4><span class="glyphicon glyphicon-lock"></span> Tickets</h4>
-        </div>
-        <div class="modal-body">
-          <form role="form">
-            <div class="form-group">
-              <label for="psw"><span class="glyphicon glyphicon-shopping-cart"></span> Tickets, $23 per person</label>
-              <input type="number" class="form-control" id="psw" placeholder="How many?">
-            </div>
-            <div class="form-group">
-              <label for="usrname"><span class="glyphicon glyphicon-user"></span> Send To</label>
-              <input type="text" class="form-control" id="usrname" placeholder="Enter email">
-            </div>
-              <button type="submit" class="btn btn-block">Pay 
-                <span class="glyphicon glyphicon-ok"></span>
-              </button>
-          </form>
-        </div>
-        <div class="modal-footer">
-          <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
-            <span class="glyphicon glyphicon-remove"></span> Cancel
-          </button>
-          <p>Need <a href="#">help?</a></p>
-        </div>
-      </div>
+ <h2><center>Some Inspiring Quotes</center></h2>
+<div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+    <h4><br><span style="font-style:normal;">"If you can dream it, you can do it."</span></h4>
+    </div>
+    <div class="item">
+      <h4>"It always seems impossible until it's done.
+"<br><span style="font-style:normal;"></span></h4>
+    </div>
+    <div class="item">
+      <h4>"The secret of getting ahead is getting started.
+"<br><span style="font-style:normal;"></span></h4>
     </div>
   </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
 </div>
-
-<!-- Container (Contact Section) -->
-<div id="contact" class="container">
-  <h3 class="text-center">Contact</h3>
-  <p class="text-center"><em>I would love to work with ya</em></p>
-
-  <div class="row">
-    <div class="col-md-4">
-      <p> Call me at 9808946801 </p>
-      </div>
-      </div>
-       
- 
-  <div class="tab-content">
-    <div id="home" class="tab-pane fade in active">
-      <h2>Hello</h2>
-      <p>Man, we've been on the road for some time now. </p>
-    </div>
-    <div id="menu1" class="tab-pane fade">
-      <h2>Guitarist</h2>
-      <p>Always a pleasure people! Hope you enjoyed it as much as I did. Could I BE.. any more pleased?</p>
-    </div>
-    <div id="menu2" class="tab-pane fade">
-      <h2>Bass player</h2>
-      <p>I mean, sometimes I enjoy the show, but other times I enjoy other things.</p>
-    </div>
-  </div>
-</div>
-
-<div id="googleMap"></div>
-
-<!-- Add Google Maps -->
-<script src="https://maps.googleapis.com/maps/api/js"></script>
-<script>
-var myCenter = new google.maps.LatLng(27.700769 , 85.300140);
-
-function initialize() {
-var mapProp = {
-center:myCenter,
-zoom:12,
-scrollwheel:false,
-draggable:false,
-mapTypeId:google.maps.MapTypeId.ROADMAP
-};
-
-var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-
-var marker = new google.maps.Marker({
-position:myCenter,
-});
-
-marker.setMap(map);
-}
-
-google.maps.event.addDomListener(window, 'load', initialize);
-</script>
 
 <!-- Footer -->
 <footer class="text-center">
